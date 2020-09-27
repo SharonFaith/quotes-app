@@ -1,15 +1,25 @@
 <div class="container">
     <h1 class="text-center">Quotes</h1>
     <hr>
+    <!--// id, quoteBody, publisher, datePublished, author-->
     <div class="row">
         <div class="col-md-6">
-            <div>
+            
+            <div *ngFor = "let quote of quotes; let i = index" class="card">
+                <div class="card-body">
+                    <div>
+                        <p> {{quote.quoteBody}} </p>
+                    </div>
+                    <div>
+    
+                    </div>
+                </div>
                 
             </div>
         </div>
         <div class="col-md-6">
             <div>
-                
+                <app-quote-form></app-quote-form>
             </div>
         </div>
     </div>
