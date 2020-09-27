@@ -9,11 +9,18 @@
             <div *ngFor = "let quote of quotes; let i = index" class="card">
                 <div class="card-body">
                     <div>
-                        <p> {{quote.quoteBody}} </p>
+                        <p> Quote: {{quote.quoteBody}} </p>
+                        <p> Publisher: {{quote.publisher}}</p>
+                        <button (click) = 'toggleDetails(i)'>Show details</button>
                     </div>
-                    <div>
-    
+                    
+                    <div *ngIf='quote.showDescription'>
+                        <app-quote-details [quote] = 'quote'></app-quote-details>
                     </div>
+                </div>
+                <div class="card-footer">
+                    <button>buttons for upvote,downvote here</button>
+                    <p>Date posted: {{quote.datePublished|date}} </p>
                 </div>
                 
             </div>
