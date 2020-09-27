@@ -2,7 +2,7 @@
     <h5 class="text-center">Add a quote</h5>
     <hr>
     <!--// id, quoteBody, publisher, datePublished, author-->
-    <form #quoteForm='ngForm'>
+    <form #quoteForm='ngForm' (ngSubmit) = 'onSubmit()'>
 
         <div class="form-group">
             <label for="publisher">Your name: </label>

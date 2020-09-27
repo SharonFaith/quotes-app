@@ -28,6 +28,14 @@ export class QuoteComponent implements OnInit {
     }
    }
 
+    listQuote(quote) {
+      let quoteLength = this.quotes.length;
+      quote.id = quoteLength + 1;
+      quote.datePublished = new Date(quote.datePublished)
+      this.quotes.unshift(quote)
+    }
+   
+
   constructor() { }
 
   ngOnInit(): void {
