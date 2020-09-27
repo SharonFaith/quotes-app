@@ -5,20 +5,20 @@
     <form #quoteForm='ngForm'>
 
         <div class="form-group">
-            <label for="publisher">Kindly input your name: </label>
+            <label for="publisher">Your name: </label>
             <input type="text" name="publisher" id="publisher" class="form-control" [(ngModel)] = "newQuote.publisher" #publisher = 'ngModel' required> 
         </div>
-        <!-- <div [hidden] = "publisher.valid || publisher.pristine" class="alert alert-danger">
+        <div [hidden] = "publisher.valid || publisher.pristine" class="alert alert-danger">
             <p>Your name is required</p>
-        </div> -->
+        </div>
         {{newQuote.publisher}}
         <div class="form-group">
             <label for="quoteBody">Quote:</label>
             <textarea class="form-control" rows="4" id="quoteBody" name="quoteBody" [(ngModel)] = "newQuote.quoteBody" #quoteBody = 'ngModel' required></textarea>
         </div>
-        <!-- <div [hidden] = "quoteBody.valid || quoteBody.pristine" class="alert alert-danger">
+        <div [hidden] = "quoteBody.valid || quoteBody.pristine" class="alert alert-danger">
             <p>Quote is required</p>
-        </div> -->
+        </div>
         {{newQuote.quoteBody}}
 
         <div class="form-group">
@@ -27,9 +27,9 @@
         </div>
         
         
-        <!-- <div [hidden] = "author.valid || author.pristine" class="alert alert-danger">
+        <div [hidden] = "author.valid || author.pristine" class="alert alert-danger">
             <p>Author is required</p>
-        </div> -->
+        </div> 
 
         {{newQuote.author}}
         
@@ -39,11 +39,11 @@
         </div>
 
         
-        <!-- <div [hidden] = "datePublished.valid || datePublished.pristine" class="alert alert-danger">
+        <div [hidden] = "datePublished.valid || datePublished.pristine" class="alert alert-danger">
             <p>Kindly select today's date</p>
-        </div> -->
+        </div> 
         
-        <button type="submit" class="btn btn-success">Add</button> &nbsp; <button class="btn btn-warning">Reset</button>
+        <button type="submit" class="btn btn-success" [disabled] = "!quoteForm.valid">Add</button>
     </form>
     
 </div>
