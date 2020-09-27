@@ -1,1 +1,45 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <h5 class="text-center">Add a quote</h5>
+    <hr>
+    <!--// id, quoteBody, publisher, datePublished, author-->
+    <form>
+        <div class="form-group">
+            <label for="publisher">Kindly input your name: </label>
+            <input type="text" name="publisher" id="publisher" class="form-control">
+        </div>
+        <!-- <div [hidden] = "publisher.valid || publisher.pristine" class="alert alert-danger">
+            <p>Your name is required</p>
+        </div> -->
+        
+        <div class="form-group">
+            <label for="quoteBody">Quote:</label>
+            <textarea class="form-control" rows="4" id="quoteBody" name="quoteBody" required></textarea>
+        </div>
+        <!-- <div [hidden] = "quoteBody.valid || quoteBody.pristine" class="alert alert-danger">
+            <p>Quote is required</p>
+        </div> -->
+
+        <div class="form-group">
+            <label for="author">Author of quote:</label>
+            <input type="text" class="form-control" id="author" name="author" required>
+        </div>
+        
+        
+        <!-- <div [hidden] = "author.valid || author.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+        </div> -->
+        
+        <div class="form-group">
+            <label for="date">Date today</label>
+            <input type="date" id="datePublished" name="datePublished" class="form-control" required>
+        </div>
+
+        
+        <!-- <div [hidden] = "datePublished.valid || datePublished.pristine" class="alert alert-danger">
+            <p>Kindly select today's date</p>
+        </div> -->
+
+        <button type="submit" class="btn btn-success">Add</button> &nbsp; <button class="btn btn-warning">Reset</button>
+    </form>
+    
+</div>
