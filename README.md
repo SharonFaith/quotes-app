@@ -1,26 +1,55 @@
-# QuotesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
-## Development server
+# Quotes
+#### A web application, 27th August 2020
+#### By **Sharon Faith**
+## Description
+This is a website that deals with quotes, whereby the user can view and upvote or downvote existing quotes, as well as add or delete quotes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup/Installation Requirements
+* Use a desktop or laptop, phone or tablet.
+* Access the live site at: https://sharonfaith.github.io/quotes-app/
+* To install, go to URL : https://github.com/SharonFaith/quotes-app/ then clone or download repository
+* Unzip the file
+* Move contents to folder you desire
 
-## Build
+## Known Bugs
+- No known bugs
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Technologies Used
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+- HTML and CSS
+- Typescript
+- Bootstrap
+- JavaScript
 
-## Running unit tests
+## Support and contact details
+Github account: SharonFaith
+### License
+*MIT License*
+Copyright (c) {2020} **Sharon Faith**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Running end-to-end tests
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
 
 ## Further help
 
