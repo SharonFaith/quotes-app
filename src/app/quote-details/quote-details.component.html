@@ -1,4 +1,5 @@
 <p>Author: {{quote.author}} </p>
-<p>Number of votes: </p>
+<p>Number of upvotes: {{quote.upVotes}} </p>
+<p>Number of downvotes: {{quote.downVotes}} </p>
 <p>Days since quote was published: {{quote.datePublished|daysPassedCount}} </p>
 <button (click) = 'deleteQuote(true)' class="btn btn-danger">Delete Quote</button>

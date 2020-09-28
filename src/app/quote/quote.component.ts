@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { Console } from 'console';
 import { Quote } from '../quote'
 
 @Component({
@@ -27,6 +28,7 @@ export class QuoteComponent implements OnInit {
       }
     }
    }
+
    
    increment(index) {
      this.quotes[index].upVotes = ++this.quotes[index].upVotes
@@ -44,11 +46,26 @@ export class QuoteComponent implements OnInit {
       quote.downVotes = 0
       this.quotes.unshift(quote)
     }
+
+    
+    displayMax() {
+      let maxUpvotes = Math.max(...this.quotes.map(o => o.upVotes), 0);
+      console.log(maxUpvotes);
+      //console.log(this.quotes[index].quoteBody);
+      return maxUpvotes
+    } 
+    
+   
+    
    
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): any {
+    this.displayMax()
+    
+  
+    
   }
 
 }

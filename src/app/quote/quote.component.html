@@ -9,7 +9,7 @@
             <div *ngFor = "let quote of quotes; let i = index" class="card"   >
                 <div class="card-body quote " >
                     <div class="" style="background-color: rgba(255, 196, 0, 0.877); ">
-                        <p > Quote: {{quote.quoteBody}} </p>
+                        <p class="highlight"> Quote: {{quote.quoteBody}}</p>
                         <p> Publisher: {{quote.publisher}}</p>
                         <button (click) = 'toggleDetails(i)' class="btn btn-success" >Show details</button>
                     </div>
@@ -21,7 +21,7 @@
                 <div class="card-footer" style="background-color: coral;">
                     
                     
-                    <button class="btn btn-primary btn-sm" (click)= "increment(i)">{{quote.upVotes}} Upvotes</button> | <button class="btn btn-danger btn-sm" (click)= "decrement(i)">{{quote.downVotes}} Downvotes</button> 
+                    <button class="btn btn-primary btn-sm" (click)= "increment(i)">{{quote.upVotes}} Upvote + </button> | <button class="btn btn-danger btn-sm" (click)= "decrement(i)">{{quote.downVotes}} Downvote -</button> 
                     <p>Date posted: {{quote.datePublished|date}} </p>
                 </div><br>
                 
