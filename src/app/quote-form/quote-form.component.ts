@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+
 import { Quote } from '../quote'
 
 @Component({
@@ -16,6 +17,24 @@ export class QuoteFormComponent implements OnInit {
     this.newQuote = new Quote(0, '', '', new Date(), '');
     
   }
+   
+  /*app = this.module("myModule", [])
+		.controller("myController" , function($scope){
+ 
+	var members =[
+		{name: "John Smith", Votes: 0},
+		{name: "Claire Temple", Votes: 0},
+	];					
+ 
+	$scope.members = members;
+ 
+	$scope.incrementUp = function(member){
+		member.Votes++;
+	}
+	$scope.incrementDown = function(member){
+		member.Votes--;
+	}
+});	*/
 
   constructor() { }
 

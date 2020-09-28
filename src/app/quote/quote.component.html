@@ -1,29 +1,32 @@
-<div class="container">
-    <h1 class="text-center">Quotes</h1>
+<div class="container" style="background-color: black;">
+    <h1 class="jumbotron text-center border border-dark;" style="background-color: coral;">Quotes</h1>
     <hr>
     <!--// id, quoteBody, publisher, datePublished, author-->
     <div class="row">
         <div class="col-md-6">
-            <h5 class="text-center">Quotes</h5>
+            <h5 class="text-center" style="background-color: coral; ">Quotes</h5>
             <hr>
-            <div *ngFor = "let quote of quotes; let i = index" class="card">
-                <div class="card-body">
-                    <div>
-                        <p> Quote: {{quote.quoteBody}} </p>
+            <div *ngFor = "let quote of quotes; let i = index" class="card"   >
+                <div class="card-body quote " >
+                    <div class="" style="background-color: rgba(255, 196, 0, 0.877); ">
+                        <p > Quote: {{quote.quoteBody}} </p>
                         <p> Publisher: {{quote.publisher}}</p>
-                        <button (click) = 'toggleDetails(i)'>Show details</button>
+                        <button (click) = 'toggleDetails(i)' class="btn btn-success" >Show details</button>
                     </div>
                     
                     <div *ngIf='quote.showDescription'>
                         <app-quote-details [quote] = 'quote' (toDelete) = 'deleteQuoteFunc($event, i)' ></app-quote-details>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button>buttons for upvote,downvote here</button>
+                <div class="card-footer" style="background-color: coral;">
+                    
+                      
+                    <!-- <button class="btn btn-primary btn-sm" ng-click= "incrementUp(member)"><span class="glyphicon glyphicon-arrow-up"></span> Upvote</button> | <button class="btn btn-danger btn-sm" ng-click= "incrementDown(member)"><span class="glyphicon glyphicon-arrow-down"></span> Downvote</button> -->
                     <p>Date posted: {{quote.datePublished|date}} </p>
-                </div>
+                </div><br>
                 
             </div>
+            <hr>
         </div>
         <div class="col-md-6">
             <div>
