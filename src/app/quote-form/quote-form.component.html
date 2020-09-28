@@ -5,7 +5,7 @@
     <form #quoteForm='ngForm' (ngSubmit) = 'onSubmit()' style="background-color: white; padding: 20pt;">
 
         <div class="form-group">
-            <label for="publisher" style="text-decoration: blanchedalmond; text-;">Your name: </label>
+            <label for="publisher" style="text-decoration: blanchedalmond;">Your name: </label>
             <input type="text" name="publisher" id="publisher" class="form-control" [(ngModel)] = "newQuote.publisher" #publisher = 'ngModel' required> 
         </div>
         <div [hidden] = "publisher.valid || publisher.pristine" class="alert alert-danger">

@@ -27,6 +27,14 @@ export class QuoteComponent implements OnInit {
       }
     }
    }
+   
+   increment(index) {
+     this.quotes[index].upVotes = ++this.quotes[index].upVotes
+   }
+
+   decrement(index) {
+     this.quotes[index].downVotes = --this.quotes[index].downVotes
+   }
 
     listQuote(quote) {
       let quoteLength = this.quotes.length;
