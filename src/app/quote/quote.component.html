@@ -20,8 +20,8 @@
                 </div>
                 <div class="card-footer" style="background-color: coral;">
                     
-                      
-                    <!-- <button class="btn btn-primary btn-sm" ng-click= "incrementUp(member)"><span class="glyphicon glyphicon-arrow-up"></span> Upvote</button> | <button class="btn btn-danger btn-sm" ng-click= "incrementDown(member)"><span class="glyphicon glyphicon-arrow-down"></span> Downvote</button> -->
+                    
+                    <button class="btn btn-primary btn-sm" (click)= "incrementUp()">{{quote.upVotes}} Upvotes</button> | <button class="btn btn-danger btn-sm" (click)= "incrementDown()">{{quote.downVotes}} Downvotes</button> 
                     <p>Date posted: {{quote.datePublished|date}} </p>
                 </div><br>
                 
